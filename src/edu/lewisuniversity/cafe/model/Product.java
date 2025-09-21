@@ -8,9 +8,12 @@ public abstract class Product {
     private BigDecimal basePrice;
 
     public Product(String id, String name, BigDecimal basePrice){
-        setId(id);
+    	this.id = id;
+    	this.name = name;
+    	this.basePrice = basePrice;
+        /*setId(id);
         setName(name);
-        setBasePrice(basePrice);
+        setBasePrice(basePrice);*/
     }
     public String getId(){
         return id;
@@ -22,13 +25,14 @@ public abstract class Product {
         return basePrice;
     }
 
-    public void setId(String id){this.id = id;}
+    /*public void setId(String id){this.id = id;}
     public void setName(String name){
         this.name = name;
     }
+    
     public void setBasePrice(BigDecimal basePrice){
         this.basePrice = basePrice;
-    }
+    }*/
 
     public abstract BigDecimal price();
 }

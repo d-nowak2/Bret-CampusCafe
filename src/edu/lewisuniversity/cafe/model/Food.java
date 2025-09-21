@@ -3,12 +3,10 @@ package edu.lewisuniversity.cafe.model;
 import java.math.BigDecimal;
 
 public class Food extends Product{
-
     private AddOn addon;
 
-    public Food(String id, String name, BigDecimal basePrice, AddOn addon) {
+    public Food(String id, String name, BigDecimal basePrice) {
         super(id, name, basePrice);
-        setAddon(addon);
     }
 
     public void setAddon(AddOn addon){
